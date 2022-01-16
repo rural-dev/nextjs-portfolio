@@ -29,7 +29,6 @@ function CustomSlider() {
 
   const settings = {
     infinite: true,
-    lazyLoad: true,
     autoplay: true,
     autoplaySpeed: 2000,
     speed: 300,
