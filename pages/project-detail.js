@@ -14,7 +14,7 @@ export default function ProjectDetail() {
         <link rel="icon" href="/logo.svg" />
       </Head>
       <Header/>
-      <div className='px-20'>
+      <div className='px-5 lg:px-20'>
         <div className='py-8 flex flex-col items-start'>
           <h1 className='text-center text-4xl text-basic font-semibold font-body'>Lorem Ipsum - E Commerce Web</h1>
         </div>

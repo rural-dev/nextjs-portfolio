@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <nav className="flex flex-row flex-end py-8 px-20">
         <Image src="/logo.svg" alt="Logo" width={44} height={32}/>
-        <ul className="flex flex-row rounded-md items-center h-16 bg-gradient-to-r from-bg1 to-transparent py-2 ml-8 pr-8">
+        <ul className="hidden lg:flex flex-row rounded-md items-center h-16 bg-gradient-to-r from-bg1 to-transparent py-2 ml-8 pr-8">
           <li className="text-base font-semibold font-body text-violet pl-8">
             <Link href="/">
               <a>Home</a>

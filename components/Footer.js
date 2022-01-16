@@ -6,8 +6,8 @@ const Footer = () => {
 
     return (
       <div className="relative" id="contact">
-        <div className="bg-bg2 h-[418px] flex flex-row py-16 px-20">
-            <div className="basis-2/5 flex flex-col">
+        <div className="bg-bg2 flex lg:flex-row flex-col py-16 px-5 lg:px-20">
+            <div className="lg:basis-2/5 basis-5/5 flex flex-col px-5 lg:px-0 pb-10 lg:pb-0">
                 <h2 className="text-white text-4xl font-semibold font-body">Contact me.</h2>
                 <p className="text-white text-sm font-medium font-body pt-8">Mail me here</p>
                 <p className="text-white text-lg font-semibold font-body">azizsaefulhidayat@gmail.com</p>
@@ -21,7 +21,7 @@ const Footer = () => {
                 </div>
                 <p className="text-white text-xs font-medium font-body pt-8">Copyright © 2022, All right reserved</p>
             </div>
-            <div className="basis-3/5 ml-auto rounded-md flex flex-col p-8 bg-gradient-to-r from-[#FFFFFF10] to-transparent">
+            <div className="lg:basis-3/5 basis-5/5 ml-auto rounded-md flex flex-col p-8 bg-gradient-to-r from-[#FFFFFF10] to-transparent">
               <form>
                   <input type="text" id="name" name="name" className="w-full bg-transparent border-b-[1px] border-white mb-4 py-2 text-white text-sm font-medium font-body" value="Your name"></input>
                   <input type="text" id="email" name="email" className="w-full bg-transparent border-b-[1px] border-white mb-4 py-2 text-white text-sm font-medium font-body" value="Your email address"></input>
