@@ -57,7 +57,7 @@ function CustomSlider() {
     <div className="App">
       <Slider {...settings} className="relative">
       {images.map((img, idx) => (
-          <div className={getClass(idx)}>
+          <div className={getClass(idx)} key={idx}>
             <img src={img} alt={img} />
           </div>
         ))}
