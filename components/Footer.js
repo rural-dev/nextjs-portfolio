@@ -1,8 +1,9 @@
 import Image from "next/image";
 import React, { Component, Fragment } from "react";
 
-class Footer extends Component {
-  render() {
+const Footer = () => {
+    const ScrollToTop = () => window.scroll({ top: 0, behavior: "smooth" })
+
     return (
       <div className="relative">
         <div className="bg-bg2 h-[418px] flex flex-row py-16 px-20">
@@ -34,12 +35,12 @@ class Footer extends Component {
             </div>
 
         </div>
-        <button className="w-[40px] h-[56px] bg-violet rounded-b-full absolute -top-2 right-8">
+        <button className="w-[40px] h-[56px] bg-violet rounded-b-full absolute -top-2 right-8" onClick={ScrollToTop}>
         <Image src="/arrow-up.svg" alt="arrow-up" width={24} height={22}/>
         </button>
       </div>
     );
   }
-}
+
 
 export default Footer;
