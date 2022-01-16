@@ -14,15 +14,15 @@ const Header = () => {
     return (
       <>
         <nav className="flex flex-row flex-end py-8 px-20">
-        <div class="md:hidden flex mr-auto items-center">
-        <button class="outline-none mobile-menu-button" onClick={showMobileMenu}>
+        <div className="md:hidden flex mr-auto items-center">
+        <button className="outline-none mobile-menu-button" onClick={showMobileMenu}>
           <svg
             class="w-6 h-6 text-gray-500"
             x-show="!showMenu"
             fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="4"
             viewBox="0 0 24 24"
             stroke="#A93DE9"
           >
@@ -55,21 +55,21 @@ const Header = () => {
         <button className="flex ml-auto rounded-md text-violet border-2 border-violet text-base font-semibold font-body px-5">Download CV</button>
         
       </nav>
-      <div class="hidden mobile-menu">
-      <ul class="">
-        <li class="active">
+      <div className="hidden mobile-menu">
+      <ul>
+        <li className="active">
         <Link href="/">
-          <a class="block text-sm px-2 py-4 text-white bg-violet font-semibold">Home</a>
+          <a className="block text-sm px-2 py-4 text-white bg-violet font-semibold">Home</a>
         </Link>
         </li>
         <li>
         <Link href="/projects">
-              <a class="block text-sm px-2 py-4 hover:bg-violet transition duration-300">Projects</a>
+              <a className="block text-sm px-2 py-4 hover:bg-violet transition duration-300">Projects</a>
             </Link></li>
         <li><a onClick={ScrollToBottom} class="block text-sm px-2 py-4 hover:bg-violet transition duration-300">Contact Us</a></li>
         <li>
         <Link href="/test">
-              <a class="block text-sm px-2 py-4 hover:bg-violet transition duration-300">About</a>
+              <a className="block text-sm px-2 py-4 hover:bg-violet transition duration-300">About</a>
             </Link></li>
       </ul>
     </div>
