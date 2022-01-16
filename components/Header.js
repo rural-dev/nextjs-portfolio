@@ -17,7 +17,7 @@ const Header = () => {
         <div className="md:hidden flex mr-auto items-center">
         <button className="outline-none mobile-menu-button" onClick={showMobileMenu}>
           <svg
-            class="w-6 h-6 text-gray-500"
+            className="w-6 h-6 text-gray-500"
             x-show="!showMenu"
             fill="none"
             strokeLinecap="round"
