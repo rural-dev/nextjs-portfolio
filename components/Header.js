@@ -2,8 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { Component, Fragment } from "react";
 
-class Header extends Component {
-  render() {
+const Header = () => {
+  const ScrollToBottom = () => {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
+  }
+
     return (
         <nav className="flex flex-row flex-end py-8 px-20">
         <Image src="/logo.svg" alt="Logo" width={44} height={32}/>
@@ -18,13 +21,12 @@ class Header extends Component {
               <a>Projects</a>
             </Link>
         </li>
-          <li className="text-base font-semibold font-body text-basic pl-8">About</li>
-          <li className="text-base font-semibold font-body text-basic pl-8">Contact</li>
+          <li onClick={ScrollToBottom}><button className="text-base font-semibold font-body text-basic pl-8"  >Contact</button></li>
         </ul>
         <button className="ml-auto rounded-md text-violet border-2 border-violet text-base font-semibold font-body px-5">Download CV</button>
       </nav>
     );
   }
-}
+
 
 export default Header;

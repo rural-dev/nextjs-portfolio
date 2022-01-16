@@ -5,7 +5,7 @@ const Footer = () => {
     const ScrollToTop = () => window.scroll({ top: 0, behavior: "smooth" })
 
     return (
-      <div className="relative">
+      <div className="relative" id="contact">
         <div className="bg-bg2 h-[418px] flex flex-row py-16 px-20">
             <div className="basis-2/5 flex flex-col">
                 <h2 className="text-white text-4xl font-semibold font-body">Contact me.</h2>
