@@ -66,7 +66,7 @@ const Header = () => {
         <Link href="/projects">
               <a className="block text-sm px-2 py-4 hover:bg-violet transition duration-300">Projects</a>
             </Link></li>
-        <li><a onClick={ScrollToBottom} class="block text-sm px-2 py-4 hover:bg-violet transition duration-300">Contact Us</a></li>
+        <li><a onClick={ScrollToBottom} className="block text-sm px-2 py-4 hover:bg-violet transition duration-300">Contact Us</a></li>
         <li>
         <Link href="/test">
               <a className="block text-sm px-2 py-4 hover:bg-violet transition duration-300">About</a>
