@@ -59,17 +59,17 @@ const Header = () => {
       <ul>
         <li className="active">
         <Link href="/">
-          <a className="block px-2 py-4 text-white bg-violet text-base font-semibold font-body">Home</a>
+          <a className="block px-2 py-4 text-white bg-basic text-base font-semibold font-body">Home</a>
         </Link>
         </li>
         <li>
         <Link href="/projects">
-              <a className="block text-base font-semibold font-body px-2 py-4 hover:bg-violet text-basic hover:text-white transition duration-300">Projects</a>
+              <a className="block text-base font-semibold font-body px-2 py-4 hover:bg-basic text-basic hover:text-white transition duration-100">Projects</a>
             </Link></li>
-        <li><a onClick={ScrollToBottom} className="block text-base font-semibold font-body px-2 py-4 hover:bg-violet text-basic hover:text-white transition duration-300">Contact Us</a></li>
+        <li><a onClick={ScrollToBottom} className="block text-base font-semibold font-body px-2 py-4 hover:bg-basic text-basic hover:text-white transition duration-100">Contact Us</a></li>
         <li>
         <Link href="/test">
-              <a className="block text-base font-semibold font-body px-2 py-4 hover:bg-violet text-basic hover:text-white transition duration-300">About</a>
+              <a className="block text-base font-semibold font-body px-2 py-4 hover:bg-basic text-basic hover:text-white transition duration-100">About</a>
             </Link></li>
       </ul>
     </div>
