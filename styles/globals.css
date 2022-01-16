@@ -58,3 +58,15 @@ top: 46%;
 left: 20%;
 top: 46%;
 }
+
+@media (max-width: 800px) {
+  .next {
+    right: -5%;
+    top: 46%;
+    }
+    
+    .prev {
+    left: -5%;
+    top: 46%;
+    }
+}
