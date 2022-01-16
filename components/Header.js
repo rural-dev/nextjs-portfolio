@@ -52,7 +52,7 @@ const Header = () => {
           </li>
         </ul>
         
-        <button className="flex ml-auto rounded-md text-violet border-2 border-violet text-base font-semibold font-body px-5">Download CV</button>
+        <button className="flex ml-auto rounded-md text-violet border-2 border-violet text-base font-semibold font-body px-5 items-center">Download CV</button>
         
       </nav>
       <div className="hidden mobile-menu">
