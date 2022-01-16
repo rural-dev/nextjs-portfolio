@@ -13,7 +13,7 @@ const Header = () => {
   }
     return (
       <>
-        <nav className="flex flex-row flex-end py-8 px-20">
+        <nav className="flex flex-row flex-end py-8 px-5 lg:px-20">
         <div className="md:hidden flex mr-auto items-center">
         <button className="outline-none mobile-menu-button" onClick={showMobileMenu}>
           <svg
