@@ -1,5 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.App {
+    margin: 4rem auto;
+    height: 360px;
+  }
+.slide img {
+    width: 40rem;
+    margin: 0 auto;
+  }
+  
+
+.nextslide {
+transform: scale(0.7) translate(-100%);
+transition: transform 300ms;
+opacity: 0.5;
+}
+
+.prevslide {
+transform: scale(0.7) translate(100%);
+transition: transform 300ms;
+opacity: 0.5;
+}
+
+.activeSlide {
+transform: scale(1);
+opacity: 1;
+position: relative !important;
+z-index: 10 !important;
+}
+
+.arrow {
+position: absolute;
+cursor: pointer;
+z-index: 10;
+}
+
+.arrow svg {
+transition: color 300ms;
+}
+
+.arrow svg:hover {
+color: #68edff;
+}
+
+.next {
+right: 20%;
+top: 46%;
+}
+
+.prev {
+left: 20%;
+top: 46%;
+}
