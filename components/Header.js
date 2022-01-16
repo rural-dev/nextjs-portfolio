@@ -24,7 +24,7 @@ const Header = () => {
             strokeLinejoin="round"
             strokeWidth="4"
             viewBox="0 0 24 24"
-            stroke="#A93DE9"
+            stroke="#4F4058"
           >
           <path d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
