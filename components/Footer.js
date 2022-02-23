@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="lg:basis-2/5 basis-5/5 flex flex-col px-5 lg:px-0 pb-10 lg:pb-0">
                 <h2 className="text-white text-4xl font-semibold font-body">Contact me.</h2>
                 <p className="text-white text-sm font-medium font-body pt-8">Hire me</p>
-                <a href="https://www.upwork.com/freelancers/~018467d55c4bde0a45" target='_blank'><p className="text-white text-lg font-semibold font-body">Hire me in Upwork</p></a>
+                <a href="https://www.upwork.com/freelancers/~018467d55c4bde0a45" target='_blank' rel="noreferrer"><p className="text-white text-lg font-semibold font-body">Hire me in Upwork</p></a>
                 <p className="text-white text-sm font-medium font-body pt-8">Follow me</p>
                 <div className="flex flex-row pt-4">
                   <div className="pr-6"><Image src="/fb.svg" alt="Facebook" width={24} height={24}/></div>
