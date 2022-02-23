@@ -63,7 +63,7 @@ export default function Home() {
       <div className='bg-basic flex flex-col lg:flex-row space-x-8'>
         <div className='basis-1/2 px-20 py-16'>
         <h2 className="text-white text-4xl font-semibold font-body">About me.</h2>
-        <p className="text-white text-sm font-medium font-body pt-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean semper at lacus, duis. Dignissim placerat lacus amet elementum ullamcorper.  <span className="text-violet">See more.</span></p>
+        <p className="text-white text-sm font-medium font-body pt-8">I am a self-taught developer who always hungry to learn and a perfectionist with the result.  <span className="text-violet">See more.</span></p>
 
         </div>
         <div className='basis-1/2 w-full h-full relative'>
