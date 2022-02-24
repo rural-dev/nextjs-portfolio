@@ -51,9 +51,9 @@ const Header = () => {
             </Link>
           </li>
         </ul>
-        <a href="https://www.upwork.com/freelancers/~018467d55c4bde0a45" target='_blank' rel="noreferrer">
-        <button className="flex ml-auto rounded-md text-violet border-2 border-violet text-base font-semibold font-body px-5 items-center">Hire me on Upwork</button>
-        </a>
+        
+        <button className="flex ml-auto rounded-md text-violet border-2 border-violet text-base font-semibold font-body px-5 items-center"><a href="https://www.upwork.com/freelancers/~018467d55c4bde0a45" target='_blank' rel="noreferrer">Hire me on Upwork</a></button>
+        
       </nav>
       <div className="hidden mobile-menu">
       <ul>
