@@ -1,9 +1,20 @@
 import Image from "next/image";
-import React, { Component, Fragment } from "react";
+import React, { Component, Fragment, useRef } from "react";
+import emailjs from '@emailjs/browser';
 
 const Footer = () => {
+    const form = useRef();
     const ScrollToTop = () => window.scroll({ top: 0, behavior: "smooth" })
-
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_zd6g33i', 'template_zs6vj2v', form.current, 'user_8lKf5G1QL5FpXUvOAFKRy')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
     return (
       <div className="relative" id="contact">
         <div className="bg-bg2 flex lg:flex-row flex-col py-16 px-5 lg:px-20">
@@ -22,16 +33,15 @@ const Footer = () => {
                 <p className="text-white text-xs font-medium font-body pt-8">Copyright © 2022, All right reserved</p>
             </div>
             <div className="lg:basis-3/5 basis-5/5 ml-auto rounded-md flex flex-col p-8 bg-gradient-to-r from-[#FFFFFF10] to-transparent">
-              <form>
+              <form ref={form} onSubmit={sendEmail}>
                   <input type="text" id="name" name="name" className="w-full bg-transparent border-b-[1px] border-white mb-4 py-2 text-white text-sm font-medium font-body" value="Your name"></input>
                   <input type="text" id="email" name="email" className="w-full bg-transparent border-b-[1px] border-white mb-4 py-2 text-white text-sm font-medium font-body" value="Your email address"></input>
                   <input type="text" id="desc" name="desc" className="w-full h-[80px] bg-transparent border-b-[1px] border-white pt-2 pb-auto text-white text-sm font-medium font-body" value="Your project description"></input>
-              </form>
-              <button className="flex flex-row mt-3 ml-auto rounded-md bg-violet2 px-5 ">
+                  <button type="submit" value="Send" className="flex flex-row mt-3 ml-auto rounded-md bg-violet2 px-5 ">
                   <div className="pt-3"><Image src="/submit.svg" alt="submit" width={20} height={20}/></div>
                   <p className="text-center text-white text-base font-semibold font-body pl-2 py-2">Submit</p>
               </button>
-
+              </form>
             </div>
 
         </div>
