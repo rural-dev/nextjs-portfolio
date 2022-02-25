@@ -35,7 +35,7 @@ const Footer = () => {
             <div className="lg:basis-3/5 basis-5/5 ml-auto rounded-md flex flex-col p-8 bg-gradient-to-r from-[#FFFFFF10] to-transparent">
               <form ref={form} onSubmit={sendEmail}>
                   <input type="text" id="from_name" name="from_name" className="w-full bg-transparent border-b-[1px] border-white mb-4 py-2 text-white text-sm font-medium font-body" placeholder="Your name"></input>
-                  <input type="text" id="from_email" name="from_email" className="w-full bg-transparent border-b-[1px] border-white mb-4 py-2 text-white text-sm font-medium font-body" placeholder="Your email address"></input>
+                  <input type="text" id="from_email" name="from_email" className="w-full bg-transparent border-b-[1px] border-white mb-4 py-2 text-white text-sm font-medium font-body" placeholder="Your email"></input>
                   <input type="text" id="message" name="message" className="w-full h-[80px] bg-transparent border-b-[1px] border-white pt-2 pb-auto text-white text-sm font-medium font-body" placeholder="Your project description"></input>
                   <button type="submit" value="Send" className="flex flex-row mt-3 ml-auto rounded-md bg-violet2 px-5 ">
                   <div className="pt-3"><Image src="/submit.svg" alt="submit" width={20} height={20}/></div>
