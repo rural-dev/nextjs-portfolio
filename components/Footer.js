@@ -1,19 +1,23 @@
 import Image from "next/image";
-import React, { Component, Fragment, useRef } from "react";
+import React, { Component, Fragment, useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
+import SweetAlert from 'react-bootstrap-sweetalert';
 
 const Footer = () => {
     const form = useRef();
     const ScrollToTop = () => window.scroll({ top: 0, behavior: "smooth" })
+    const [alert, setAlert] = useState(false);
     const sendEmail = (e) => {
       e.preventDefault();
   
       emailjs.sendForm('service_zd6g33i', 'template_zs6vj2v', form.current, 'user_8lKf5G1QL5FpXUvOAFKRy')
         .then((result) => {
             form.current.reset();
+            setAlert(true)
             console.log(result.text);
         }, (error) => {
             form.current.reset();
+            setAlert(true)
             console.log(error.text);
         });
     };
@@ -50,6 +54,13 @@ const Footer = () => {
         <button className="w-[40px] h-[56px] bg-violet rounded-b-full absolute -top-2 right-8" onClick={ScrollToTop}>
         <Image src="/arrow-up.svg" alt="arrow-up" width={24} height={22}/>
         </button>
+        {alert && <SweetAlert
+            success
+            title="Woot!"
+            onConfirm={setAlert(false)}
+          >
+            I did it!
+          </SweetAlert>}
       </div>
     );
   }
