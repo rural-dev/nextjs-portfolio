@@ -10,8 +10,10 @@ const Footer = () => {
   
       emailjs.sendForm('service_zd6g33i', 'template_zs6vj2v', form.current, 'user_8lKf5G1QL5FpXUvOAFKRy')
         .then((result) => {
+            form.current.reset();
             console.log(result.text);
         }, (error) => {
+            form.current.reset();
             console.log(error.text);
         });
     };
